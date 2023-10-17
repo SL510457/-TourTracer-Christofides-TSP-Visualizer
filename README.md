@@ -1,4 +1,6 @@
-# TourTracer : Christofides-TSP-Visualizer
+<!-- # TourTracer : Christofides-TSP-Visualizer -->
+# TourTracer : TSP Solver using Christofides
+<!-- # TourTracer : Christofides-TSP-Navigator -->
 This proposal outlines the workflow and plans for the NYCU NSD term project in Autumn 2023.
 
 ## Basic Information
@@ -14,8 +16,15 @@ GitHub Link : [ https://github.com/SL510457/TourTracer-Christofides-TSP-Visualiz
 
 
 ## Problem to Solve
+
 Given a graph with nodes and weighted edges, find a Hamiltonian cycle in the graph that minimizes the total distance traveled. 
-...
+
+Various applications in transportation, logistics, and optimization require efficient TSP solutions. However, due to diverse data formats and proprietary restrictions, current systems lack compatibility.
+
+This project seeks to create an interoperable TSP solution, standardizing data formats for seamless integration. It enhances efficiency, reduces complexity, and promotes TSP problem-solving across domains.
+
+
+(Still need to make more changes and additions)
 
 <!-- (2D) add_point(x,y) distance
 (3D) 
@@ -34,7 +43,15 @@ once the shortest path to the destination node has been determined. -->
 <!-- ![image](https://github.com/leeshengcian/Visualization-of-Dijkstra-Algorithm/blob/main/image/DijkstraDemo.gif) -->
 
 ## Prospective Users
-...
+1. Transportation and Aviation Professionals
+<!-- This user group encompasses transportation planners, airports, and airlines. These professionals focus on optimizing transportation routes, whether it's public transportation within cities or flight operations in the aviation industry. They can benefit from our project by efficiently planning bus routes, optimizing flight paths, reducing travel times, and improving transportation services. -->
+2. Mapping and Navigation Services
+<!-- Companies like Google Maps and other navigation service providers can integrate our solution to enhance their route optimization algorithms, ensuring users are provided with the most efficient directions and travel routes. -->
+3. Tourism and Event Management
+<!-- Event planners and tourism agencies can utilize the tool to optimize tour itineraries, plan event routes, and offer efficient travel options to tourists, enhancing their overall experience. -->
+4. Robotics and Autonomous Vehicles:
+<!-- Researchers and developers in the field of robotics and autonomous vehicles can integrate this solution to improve path planning for robots and self-driving cars, making them more efficient and safe. -->
+(Still need to make more changes and additions)
 
 ## System Architecture
 ...
@@ -59,15 +76,17 @@ once the shortest path to the destination node has been determined. -->
 ## Schedule
 Planning phase (6 weeks from mm/dd to mm/dd):
 ...
-<!-- 
+
 * Week 1 (10/30):
-    - Study domain Knowledge for Dijkstra's Algorithm
-    - Plot the original graph using networkx
-* Week 2 (11/6):
-    - Implement Dijkstra's on given graph
+    - Study domain Knowledge for TSP and Christofides algorithm
     - Prepare a presentation skeleton
+    <!-- - Plot the original graph using networkx -->
+
+* Week 2 (11/6):
+    - Implement Christofides algorithm on given graph
+    -  Further prepare for presentation
 * Week 3 (11/13):
-    - Finish Dijkstra's Algorithm in c++ and write pybind11 wrapper
+    - Finish Christofides algorithm in c++ and write pybind11 wrapper
     - Further prepare for presentation
 * Week 4 (11/20):
     - Finish Plot work in Python
@@ -82,9 +101,19 @@ Planning phase (6 weeks from mm/dd to mm/dd):
     - Make slides and prepare for presentation
 * Week 8 (12/18):
     - Finish writing Documentation
-    - Make slides and prepare for presentation -->
+    - Make slides and prepare for presentation
 
 ## References
 ...
 <!-- - [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 - [NetworkX](https://networkx.org/) -->
+
+<!-- | Week | Date | 內容 |
+|---|---|---|
+| 1 | 10/30 |- Study domain Knowledge for TSP and Christofides algorithm / Prepare a presentation skeleton|
+| 2|  |   |
+| 2 |  | ** ** |
+| |  |   |
+| 3 | **Conference opening** | ** ** |
+| |  |   |
+| 4 | **Styling React/ReactNative Applications –                           Max Stoiber                          KeystoneJS                        ** | **Coding Mobile with the Pros –                           Gant Laborde                          Infinite Red                        ** | -->
