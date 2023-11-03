@@ -1,10 +1,15 @@
 <!-- # TourTracer : Christofides-TSP-Visualizer -->
 <!-- # TourTracer : TSP Solver using Christofides -->
 <!-- # TourTracer : Christofides-TSP-Navigator -->
-# TourTracer : Christofides-TSP-Visualizer
+<!-- # TourTracer : Christofides-TSP-Visualizer -->
+# OptiRoute: Intelligent Travel Route Planner
 This proposal outlines the workflow and plans for the NYCU NSD term project in Autumn 2023.
 
 ## Basic Information
+The OptiRoute is centered around solving one of the most classic and fundamental problems in the realm of optimization and computer science. The TSP is a combinatorial problem that, at its core, seeks to find the most efficient route that visits a set of destinations and returns to the starting point. 
+
+In this project, we aim to develop a user-friendly system that allows users to input latitude and longitude coordinates for multiple destinations and, in turn, generates the optimal travel route, addressing various real-world applications, such as logistics, tour planning, and resource optimization.
+
 ### Traveling Salesman Problem (TSP)
 TSP is a NP hard problem. Given a set of cities and the distance between every pair of cities, the problem is to find the shortest possible route that visits each city exactly once and returns back to the original city. 
 
@@ -43,15 +48,25 @@ once the shortest path to the destination node has been determined. -->
 <!-- ![image](https://github.com/leeshengcian/Visualization-of-Dijkstra-Algorithm/blob/main/image/DijkstraDemo.gif) -->
 
 ## Prospective Users
-1. Transportation and Aviation Professionals
+1. Tour Planning Enthusiasts
+    - Targeting on travelers, tourists, and anyone planning personal trips and desire well-optimized travel experiences.
+    - Features will include user-friendly input interfaces, customization options, and the ability to prioritize scenic routes and recommendations for accommodations and dining.
+2. Logistics Companies:
+    - Catering to companies involved in goods and services transportation.
+    - Aiding in route optimization, reducing operational costs, and ensuring on-time deliveries.
+
+3. Resource Optimization Users:
+    - Serving various industries, such as energy management, agriculture, and utility services.
+    - Assisting in optimizing resource allocation, thereby improving operational efficiency in these sectors.
+<!-- 1. Transportation and Aviation Professionals -->
 <!-- This user group encompasses transportation planners, airports, and airlines. These professionals focus on optimizing transportation routes, whether it's public transportation within cities or flight operations in the aviation industry. They can benefit from our project by efficiently planning bus routes, optimizing flight paths, reducing travel times, and improving transportation services. -->
-2. Mapping and Navigation Services
+<!-- 2. Mapping and Navigation Services -->
 <!-- Companies like Google Maps and other navigation service providers can integrate our solution to enhance their route optimization algorithms, ensuring users are provided with the most efficient directions and travel routes. -->
-3. Tourism and Event Management
+<!-- 3. Tourism and Event Management -->
 <!-- Event planners and tourism agencies can utilize the tool to optimize tour itineraries, plan event routes, and offer efficient travel options to tourists, enhancing their overall experience. -->
-4. Robotics and Autonomous Vehicles:
+<!-- 4. Robotics and Autonomous Vehicles: -->
 <!-- Researchers and developers in the field of robotics and autonomous vehicles can integrate this solution to improve path planning for robots and self-driving cars, making them more efficient and safe. -->
-(Still need to make more changes and additions)
+(Still need to make more changes)
 
 
 ## System Architecture
