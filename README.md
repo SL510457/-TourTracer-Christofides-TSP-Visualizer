@@ -6,30 +6,40 @@
 This proposal outlines the workflow and plans for the NYCU NSD term project in Autumn 2023.
 
 ## Basic Information
-The OptiRoute is centered around solving one of the most classic and fundamental problems in the realm of optimization and computer science. The TSP is a combinatorial problem that, at its core, seeks to find the most efficient route that visits a set of destinations and returns to the starting point. 
+<!-- The OptiRoute is centered around solving one of the most classic and fundamental problems in the realm of optimization and computer science. The TSP is a combinatorial problem that, at its core, seeks to find the most efficient route that visits a set of destinations and returns to the starting point.  -->
+OptiRoute focuses on solving the Traveling Salesman Problem (TSP), a fundamental challenge in optimization and computer science. At its core, TSP aims to find the most efficient route that visits a set of destinations and returns to the starting point.
 
 In this project, we aim to develop a user-friendly system that allows users to input latitude and longitude coordinates for multiple destinations and, in turn, generates the optimal travel route, addressing various real-world applications, such as logistics, tour planning, and resource optimization.
+
+GitHub Link : [ https://github.com/SL510457/TourTracer-Christofides-TSP-Visualizer ]
 
 ### Traveling Salesman Problem (TSP)
 TSP is a NP hard problem. Given a set of cities and the distance between every pair of cities, the problem is to find the shortest possible route that visits each city exactly once and returns back to the original city. 
 
 ### Christofides algorithm
-The Christofides algorithm is an approximation algorithm for the Traveling Salesman Problem (TSP) that offers a good trade-off between solution quality and computational efficiency. It guarantees a solution within 1.5 times the optimal solution by using techniques like MST, minimum-weight perfect matching, Eulerian circuit.
+The Christofides algorithm is an approximation algorithm f or the Traveling Salesman Problem (TSP) that offers a good trade-off between solution quality and computational efficiency. It guarantees a solution within 1.5 times the optimal solution by using techniques like MST, minimum-weight perfect matching, Eulerian circuit.
 
+### Haversine Formula
+The Haversine Formula determines the great-circle distance between two points on a sphere given their longitudes and latitudes.
 
-GitHub Link : [ https://github.com/SL510457/TourTracer-Christofides-TSP-Visualizer ]
+![](/image/HaversineFormula.png)
+
+<!-- <pre>
+```python
+def hello_world():
+    print("Hello, World!")
+hello_world()
+```
+</pre> -->
 
 
 
 ## Problem to Solve
-Given a graph with nodes and weighted edges, find a Hamiltonian cycle in the graph that minimizes the total distance traveled. 
+Optimizing travel routes for multiple destinations is a common challenge in various fields. The problem involves finding the shortest route, which becomes increasingly complex as the number of destinations increases. Existing solutions are often lacking in user-friendliness.
 
-Various applications in transportation, logistics, and optimization require efficient TSP solutions. However, due to diverse data formats and proprietary restrictions, current systems lack compatibility.
+This project aims to create a user-friendly system that allows users to input destination coordinates. We'll then use the `Haversine formula` and the `Christofides Algorithm` to find the most efficient travel route. This project bridges the gap between theory and practical application, providing an accessible solution for optimized travel planning.
 
-This project seeks to create an interoperable TSP solution, standardizing data formats for seamless integration. It enhances efficiency, reduces complexity, and promotes TSP problem-solving across domains.
-
-
-(Still need to make more changes and additions)
+<!-- ![](/image/Chris.gif) -->
 
 <!-- (2D) add_point(x,y) distance
 (3D) 
@@ -51,13 +61,15 @@ once the shortest path to the destination node has been determined. -->
 1. Tour Planning Enthusiasts
     - Targeting on travelers, tourists, and anyone planning personal trips and desire well-optimized travel experiences.
     - Features will include user-friendly input interfaces, customization options, and the ability to prioritize scenic routes and recommendations for accommodations and dining.
-2. Logistics Companies:
+2. Logistics and Resource Optimization Users
+    - Include those involved in transportation, energy management, agriculture, utility services, and similar sectors. They benefit from route optimization and resource allocation, reducing costs and enhancing efficiency.
+<!-- 2. Logistics Companies:
     - Catering to companies involved in goods and services transportation.
     - Aiding in route optimization, reducing operational costs, and ensuring on-time deliveries.
 
 3. Resource Optimization Users:
     - Serving various industries, such as energy management, agriculture, and utility services.
-    - Assisting in optimizing resource allocation, thereby improving operational efficiency in these sectors.
+    - Assisting in optimizing resource allocation, thereby improving operational efficiency in these sectors. -->
 <!-- 1. Transportation and Aviation Professionals -->
 <!-- This user group encompasses transportation planners, airports, and airlines. These professionals focus on optimizing transportation routes, whether it's public transportation within cities or flight operations in the aviation industry. They can benefit from our project by efficiently planning bus routes, optimizing flight paths, reducing travel times, and improving transportation services. -->
 <!-- 2. Mapping and Navigation Services -->
@@ -66,7 +78,7 @@ once the shortest path to the destination node has been determined. -->
 <!-- Event planners and tourism agencies can utilize the tool to optimize tour itineraries, plan event routes, and offer efficient travel options to tourists, enhancing their overall experience. -->
 <!-- 4. Robotics and Autonomous Vehicles: -->
 <!-- Researchers and developers in the field of robotics and autonomous vehicles can integrate this solution to improve path planning for robots and self-driving cars, making them more efficient and safe. -->
-(Still need to make more changes)
+<!-- (Still need to make more changes) -->
 
 
 ## System Architecture
@@ -113,17 +125,28 @@ Planning phase (6 weeks from mm/dd to mm/dd):
     - Make slides and prepare for presentation
 
 ## References
-...
-<!-- - [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
-<<<<<<< HEAD
-- [NetworkX](https://networkx.org/) -->
+Traveling Salesman Problem:
+<!-- [Plot3D Documentation](https://nasa.github.io/Plot3D_utilities/_build/html/) -->
 
-<!-- | Week | Date | 內容 |
+https://en.wikipedia.org/wiki/Travelling_salesman_problem
+
+Christofides algorithm:
+
+https://stemlounge.com/animated-algorithms-for-the-traveling-salesman-problem/
+
+Haversine Formula:
+
+https://www.youtube.com/watch?v=HaGj0DjX8W8
+
+to be added...
+
+
+| Week | Date | 內容 |
 |---|---|---|
-| 1 | 10/30 |- Study domain Knowledge for TSP and Christofides algorithm / Prepare a presentation skeleton|
+| 1 | 10/30 |- Study domain Knowledge for TSP and Christofides algorithm - Prepare a presentation skeleton|
 | 2|  |   |
 | 2 |  | ** ** |
 | |  |   |
 | 3 | **Conference opening** | ** ** |
 | |  |   |
-| 4 | **Styling React/ReactNative Applications –                           Max Stoiber                          KeystoneJS                        ** | **Coding Mobile with the Pros –                           Gant Laborde                          Infinite Red                        ** | -->
+| 4 | **Styling React/ReactNative Applications –                           Max Stoiber                          KeystoneJS                        ** | **Coding Mobile with the Pros –                           Gant Laborde                          Infinite Red                        ** |
