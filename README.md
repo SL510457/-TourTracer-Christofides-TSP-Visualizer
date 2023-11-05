@@ -82,12 +82,18 @@ once the shortest path to the destination node has been determined. -->
 
 
 ## System Architecture
-...
+![](/image/flowchart.png)
 
 ## API Description
-1. `Christofides Function` in C++ is designed to find an approximation solution to TSP. It calculates the shortest route through a given set of nodes.
-2. `Pybind11 Wrapper for C++ Functions` enabling seamless access from Python. 
-3. `Python Graph Visualization` for visualizing the TSP graph, including the nodes and the approximate solution obtained through the Christofides algorithm.
+### Function in C++ file
+1. `Haversine Funtion` determines the great-circle distance between two points on a sphere given their longitudes and latitudes.
+2. `Node Transformation Function` use Haversine Formula to convert each destination's longitude , latitude and the distances between each pair of nodes, resulting in a weighted graph.
+3. `Christofides Function` calculates the approximation solution to TSP through a given set of nodes.
+
+### Function in python file
+1. `Visualize` for visualizing the TSP graph, including the nodes and the approximate solution obtained through the Christofides algorithm.
+
+ `Pybind11 Wrapper for C++ Functions` enabling seamless access from Python.
 
 ## Engineering Infrastructure
 
@@ -98,16 +104,16 @@ once the shortest path to the destination node has been determined. -->
 
 
 ## Schedule
-Planning phase (6 weeks from mm/dd to mm/dd):
+Planning phase (8 weeks from 10/30 to mm/dd):
 | Week | Date | 內容 |
 |---|---|---|
-| 1 | 11/6 | - Study domain Knowledge for TSP and Christofides algorithm <br> - Prepare a presentation skeleton|
-| 2 | 11/13 | - Implement Christofides algorithm on given graph <br> - Further prepare for presentation|
-| 3 | 11/20 | - Finish Christofides algorithm in C++ and write a pybind11 wrapper <br> - Further prepare for presentation|
-| 4 | 11/27 | - Finish Plot work in Python|
-| 5 | 12/4 | - Testing the correctness of the algorithm and plot work|
-| 6 | 12/11 | - Implement CMake file <br> - Make slides and prepare for presentation|
-| 7 | 12/18 | - Testing if the system build works <br> - Write the Documentation <br> - Make slides and prepare for presentation|
+| 1 | 10/30 | - Study  for TSP, Christofides algorithm and Haversine Formula <br> - Start coding the function of `Haversine Function` <br> - Prepare a presentation skeleton|
+| 2 | 11/6 | - Finish the function for the `Node Transformation Function`<br> - Start coding the function of `Christofides Function` <br> - Further prepare for presentation|
+| 3 | 11/13 | - Finish `Christofides Function` in C++ and write a pybind11 wrapper <br> - Further prepare for presentation|
+| 4 | 11/20 | - Finish Plot work in Python|
+| 5 | 11/27 | - Testing the correctness of the algorithm and plot work|
+| 6 | 12/4 | - Implement CMake file <br> - Make slides and prepare for presentation|
+| 7 | 12/11 | - Testing if the system build works <br> - Write the Documentation <br> - Make slides and prepare for presentation|
 | 8 | 12/18.. | - Finish writing Documentation <br> - Make slides and prepare for presentation|
 <!-- * Week 1 (10/30):
     - Study domain Knowledge for TSP and Christofides algorithm
