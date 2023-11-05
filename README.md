@@ -39,7 +39,7 @@ Optimizing travel routes for multiple destinations is a common challenge in vari
 
 This project aims to create a user-friendly system that allows users to input destination coordinates. We'll then use the `Haversine formula` and the `Christofides Algorithm` to find the most efficient travel route. This project bridges the gap between theory and practical application, providing an accessible solution for optimized travel planning.
 
-<!-- ![](/image/Chris.gif) -->
+![](/image/Chris.gif)
 
 <!-- (2D) add_point(x,y) distance
 (3D) 
@@ -96,12 +96,22 @@ once the shortest path to the destination node has been determined. -->
 3. Testing framework: `pytest`
 4. Documentation: `README.md`
 
+
 ## Schedule
 Planning phase (6 weeks from mm/dd to mm/dd):
-* Week 1 (10/30):
+| Week | Date | 內容 |
+|---|---|---|
+| 1 | 11/6 | - Study domain Knowledge for TSP and Christofides algorithm <br> - Prepare a presentation skeleton|
+| 2 | 11/13 | - Implement Christofides algorithm on given graph <br> - Further prepare for presentation|
+| 3 | 11/20 | - Finish Christofides algorithm in C++ and write a pybind11 wrapper <br> - Further prepare for presentation|
+| 4 | 11/27 | - Finish Plot work in Python|
+| 5 | 12/4 | - Testing the correctness of the algorithm and plot work|
+| 6 | 12/11 | - Implement CMake file <br> - Make slides and prepare for presentation|
+| 7 | 12/18 | - Testing if the system build works <br> - Write the Documentation <br> - Make slides and prepare for presentation|
+| 8 | 12/18.. | - Finish writing Documentation <br> - Make slides and prepare for presentation|
+<!-- * Week 1 (10/30):
     - Study domain Knowledge for TSP and Christofides algorithm
     - Prepare a presentation skeleton
-    <!-- - Plot the original graph using networkx -->
 
 * Week 2 (11/6):
     - Implement Christofides algorithm on given graph
@@ -122,7 +132,7 @@ Planning phase (6 weeks from mm/dd to mm/dd):
     - Make slides and prepare for presentation
 * Week 8 (12/18):
     - Finish writing Documentation
-    - Make slides and prepare for presentation
+    - Make slides and prepare for presentation -->
 
 ## References
 Traveling Salesman Problem:
@@ -139,14 +149,3 @@ Haversine Formula:
 https://www.youtube.com/watch?v=HaGj0DjX8W8
 
 to be added...
-
-
-| Week | Date | 內容 |
-|---|---|---|
-| 1 | 10/30 |- Study domain Knowledge for TSP and Christofides algorithm - Prepare a presentation skeleton|
-| 2|  |   |
-| 2 |  | ** ** |
-| |  |   |
-| 3 | **Conference opening** | ** ** |
-| |  |   |
-| 4 | **Styling React/ReactNative Applications –                           Max Stoiber                          KeystoneJS                        ** | **Coding Mobile with the Pros –                           Gant Laborde                          Infinite Red                        ** |
