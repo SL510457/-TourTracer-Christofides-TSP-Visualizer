@@ -10,20 +10,15 @@ public:
 
         Graph minSpanningTree = minimumSpanningTree(graph);
 
-        // Step 2: Find vertices with odd degree in T
         vector<int> oddVertices = findOddDegreeVertices(minSpanningTree);
 
-        // Step 3: Find minimum weight perfect matching M in the induced subgraph G' (vertices with odd degree)
         Graph inducedSubgraph = createInducedSubgraph(graph, oddVertices);
         Graph minWeightMatching = minimumWeightPerfectMatching(inducedSubgraph);
 
-        // Step 4: Combine the minimum spanning tree and the minimum weight perfect matching
         combineGraphs(minSpanningTree, minWeightMatching);
 
-        // Step 5: Find an Eulerian circuit in the combined graph
         vector<int> eulerianCircuit = findEulerianCircuit(minSpanningTree);
 
-        // Step 6: Make the circuit Hamiltonian
         vector<int> hamiltonianPath = makeHamiltonian(eulerianCircuit);
 
         return hamiltonianPath;
@@ -31,8 +26,6 @@ public:
 
 private:
     static Graph minimumSpanningTree(Graph& graph) {
-        // Prim's algorithm for minimum spanning tree
-        // (You can replace this with your preferred algorithm)
         Graph minSpanningTree(graph.V);
 
         vector<int> parent(graph.V, -1);
@@ -108,8 +101,7 @@ private:
     }
 
     static Graph minimumWeightPerfectMatching(const Graph& graph) {
-        // Implement your own algorithm for minimum weight perfect matching
-        // Here, we use a simple greedy algorithm as an example
+
         Graph minWeightMatching(graph.V);
 
         vector<bool> used(graph.V, false);
@@ -145,7 +137,6 @@ private:
     }
 
     static vector<int> findEulerianCircuit(Graph& graph) {
-        // Hierholzer's algorithm for finding Eulerian circuit
         int startVertex = 0;
 
         vector<int> circuit;
@@ -172,14 +163,12 @@ private:
             }
         }
 
-        // Reverse the circuit to get the correct order
         reverse(circuit.begin(), circuit.end());
 
         return circuit;
     }
 
     static vector<int> makeHamiltonian(const vector<int>& eulerianCircuit) {
-        // Remove duplicate vertices to obtain Hamiltonian path
         vector<int> hamiltonianPath;
 
         for (int vertex : eulerianCircuit) {
@@ -188,7 +177,6 @@ private:
             }
         }
 
-        // Add the starting vertex to complete the Hamiltonian cycle
         hamiltonianPath.push_back(eulerianCircuit.front());
 
         return hamiltonianPath;

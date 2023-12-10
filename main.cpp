@@ -9,12 +9,10 @@
 
 using namespace std;
 
-
-
-
 static double ToRadians(double degrees) {
             return degrees * M_PI / 180.0;
         }
+
 
 static double CalculateDistance(double lat1, double lon1, double lat2, double lon2) {
             double lat1Rad = ToRadians(lat1);
@@ -39,11 +37,8 @@ static double CalculateDistance(double lat1, double lon1, double lat2, double lo
 
 int main() {
     
-    int n;
-    cin >> n;
+    int n = 4;
     Graph graph(n);
-    
-    
 
     double v[n][2];
     v[0][0] = 37.7749;
