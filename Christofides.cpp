@@ -250,8 +250,8 @@ private:
     }
 };
 
-PYBIND11_MODULE(Christofide, m) {
-    m.doc() = "Your module description";
+PYBIND11_MODULE(Christofides, m) {
+    m.doc() = "";
 
     py::class_<Graph>(m, "Graph")
         .def(py::init<int>())
@@ -274,7 +274,7 @@ PYBIND11_MODULE(Christofide, m) {
 //     v[0][0] = 37.7749;
 //     v[0][1] = -122.4194;
 //     v[1][0] = 34.0522;
-//     v[1][1] = -118.2437;
+//     v[1][1] = 0;
 //     v[2][0] = 0;
 //     v[2][1] = 0;
 //     v[3][0] = 100;
