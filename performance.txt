@@ -1,0 +1,7 @@
+Christofides' Hamiltonian Path: [0, 1, 2, 4, 3, 0]
+Length of Hamiltonian Path: 31526.0
+DP's Hamiltonian Path: [1, 1, 2, 4]
+Length of DP_TSP: 31526.0
+Christofides is how many times of DP: 1.0
+DP Runtime: 0:00:00.000089
+Christofides Runtime: 0:00:00.000039

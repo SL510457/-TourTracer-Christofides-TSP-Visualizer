@@ -83,7 +83,7 @@ std::vector<int> getHamiltonianPath(const std::vector<std::pair<double, double>>
     return hamiltonianPath;
 }
 
-int calculateTSP(const std::vector<std::pair<double, double>>& coordinates) {
+double calculateTSP(const std::vector<std::pair<double, double>>& coordinates) {
     n = coordinates.size();
 
     for (int i = 0; i < n; ++i) {
@@ -102,5 +102,7 @@ int calculateTSP(const std::vector<std::pair<double, double>>& coordinates) {
         ans = std::min(ans, fun(i, (1 << n) - 1) + dist[i][0]);
     }
 
-    return ans;
+    
+
+    return (double)ans;
 }
