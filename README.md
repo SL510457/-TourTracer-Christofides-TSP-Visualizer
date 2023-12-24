@@ -59,7 +59,7 @@ This project aims to create a user-friendly system that allows users to input de
 
 ## Schedule
 Planning phase (8 weeks from 10/30 to mm/dd):
-| Week | Date | 內容 |
+| Week | Date | Progress |
 |---|---|---|
 | 1 | 10/30 | - Study  for TSP, Christofides algorithm and Haversine Formula <br> - Start coding the function of `Haversine Function` <br> - Prepare a presentation skeleton|
 | 2 | 11/6 | - Finish the function for the `Node Transformation Function`<br> - Start coding the function of `Christofides Function` <br> - Further prepare for presentation|

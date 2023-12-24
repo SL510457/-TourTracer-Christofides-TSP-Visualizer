@@ -52,7 +52,7 @@ public:
         return hamiltonianPath;
     }
 
-	static double calculatePathLength(const Graph& graph, const vector<int>& path) {
+ static double calculatePathLength(const Graph& graph, const vector<int>& path) {
         double length = 0.0;
 
         for (size_t i = 0; i < path.size() - 1; ++i) {

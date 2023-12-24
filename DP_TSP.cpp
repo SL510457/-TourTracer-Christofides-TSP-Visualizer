@@ -63,5 +63,3 @@ int calculateTSP(const std::vector<std::pair<double, double>>& coordinates) {
 
     return ans;
 }
-
-
