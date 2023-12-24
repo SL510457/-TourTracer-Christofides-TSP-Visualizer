@@ -1,25 +1,28 @@
-import math
-import numpy as np
-import matplotlib.pyplot as plt
-import Christofides
+from Christofides import calculate_tsp
+import random
 
-num_coordinates = int(input("Enter the number of coordinates: "))
+def generate_coordinates(num_cities, min_lat, max_lat, min_lon, max_lon):
+    coordinates = []
 
-graph = Christofides.Graph(num_coordinates)
+    for _ in range(num_cities):
+        lat = random.uniform(min_lat, max_lat)
+        lon = random.uniform(min_lon, max_lon)
+        coordinates.append((lat, lon))
 
-coordinates = []
-for i in range(num_coordinates):
-    lat = float(input(f"Enter latitude for coordinate {i + 1}: "))
-    lon = float(input(f"Enter longitude for coordinate {i + 1}: "))
-    coordinates.append((lat, lon))
+    return coordinates
 
-for i in range(len(coordinates)):
-    for j in range(i + 1, len(coordinates)):
-        distance = Christofides.CalculateDistance(*coordinates[i], *coordinates[j])
-        graph.addEdge(i, j, distance)
+def test_calculate_tsp():
+    coordinates = [(0, 0), (1, 1), (2, 2), (3, 3)]
+    result = calculate_tsp(coordinates)
+    assert result == 0
 
-hamiltonian_path = Christofides.ChristofidesTSP.findPath(graph)
-hamiltonian_path_length = Christofides.ChristofidesTSP.calculatePathLength(graph, hamiltonian_path)
+def test_generate_coordinates():
+    num_cities = 5
+    min_lat, max_lat = -90, 90
+    min_lon, max_lon = -180, 180
+    result = generate_coordinates(num_cities, min_lat, max_lat, min_lon, max_lon)
 
-print("Hamiltonian Path:", hamiltonian_path)
-print("Length of Hamiltonian Path:", hamiltonian_path_length)
+    assert len(result) == num_cities
+    for lat, lon in result:
+        assert min_lat <= lat <= max_lat
+        assert min_lon <= lon <= max_lon
