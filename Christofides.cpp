@@ -236,6 +236,7 @@ PYBIND11_MODULE(Christofides, m) {
     m.def("ToRadians", &ToRadians);
     m.def("CalculateDistance", &CalculateDistance);
     m.def("calculate_tsp", &calculateTSP, "Calculate the minimum cost of TSP");
+    m.def("getHamiltonianPath", &getHamiltonianPath, "get DP HamiltonianPath");
 
     py::class_<ChristofidesTSP>(m, "ChristofidesTSP")
         .def_static("findPath", &ChristofidesTSP::findPath)
