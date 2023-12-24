@@ -68,7 +68,7 @@ Planning phase (8 weeks from 10/30 to mm/dd):
 | 5 | 11/27 | - Testing the correctness of the algorithm and plot work|
 | 6 | 12/4 | - Implement CMake file <br> - Make slides and prepare for presentation|
 | 7 | 12/11 | - Testing if the system build works <br> - Write the Documentation <br> - Make slides and prepare for presentation|
-| 8 | 12/18.. | - Finish writing Documentation <br> - Make slides and prepare for presentation|
+| 8 | 12/18 | - Finish writing Documentation <br> - Make slides and prepare for presentation|
 
 
 
